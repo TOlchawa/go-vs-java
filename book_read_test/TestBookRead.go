@@ -34,7 +34,6 @@ func countWords(text string) int {
 		go func() {
 			mx.Add(1)
 			occurrence = performTestLoop(text, separators)
-			go performTestLoop(text, separators)
 			mx.Done()
 		}()
 	}
