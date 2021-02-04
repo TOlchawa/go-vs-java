@@ -2,7 +2,7 @@
 
 ## There are two applications
 One application is implemented in Go second is implemented in Java<br />
-I believe both atr doing the same in very similar way<br />
+I believe both are doing the same in very similar way<br />
 Surprisely Java application do it much faster (on my laptop)<br />
 If you have any comments - please provide me feedback - I will appreciate<br />
 
