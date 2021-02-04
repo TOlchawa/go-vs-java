@@ -42,7 +42,7 @@ public class TestBookRead {
 
     final CountDownLatch countDownLach = new CountDownLatch(10);
     long startTime = System.currentTimeMillis();
-    for (int i=0; i<100; i++) {
+    for (int i=0; i<10; i++) {
       new Thread(() -> {
         Map<String, Integer> result = performTestLoop(text);
         countDownLach.countDown();
@@ -80,7 +80,7 @@ public class TestBookRead {
 
   private Map<String, Integer> performTestLoop(String text) {
     HashMap<String, Integer> occurrence = new HashMap<>();
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 100; i++) {
       split(text, occurrence, separators);
     }
     return occurrence;
