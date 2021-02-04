@@ -88,9 +88,3 @@ func split(text string, occurrence map[string]int, separators []string) {
 		}
 	}
 }
-
-//func accWord(word string, occurrence map[string]int) {
-//	if len(word) > 0 {
-//		occurrence[word] = occurrence[word] + 1
-//	}
-//}
